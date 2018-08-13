@@ -1,0 +1,31 @@
+var list = document.querySelectorAll("li");
+for(var i=0; i<list.length; i++){
+  list[i].addEventListener("click", function(){
+    console.log(i + "번째 리스트 입니다.");
+  })
+}
+
+--------------모든 리스트가 4번째 리스트 출력-----------------
+
+"4번째 리스트 입니다."
+"4번째 리스트 입니다."
+"4번째 리스트 입니다."
+"4번째 리스트 입니다."
+
+
+------------------------------------------------------------
+
+
+var list = document.querySelectorAll("li");
+for(let i=0; i<list.length; i++){
+  list[i].addEventListener("click", function(){
+    console.log(i + "번째 리스트 입니다.");
+  })
+}
+
+--------------각각 리스트의 번호가 출력-----------------
+
+"0번째 리스트 입니다."
+"1번째 리스트 입니다."
+"2번째 리스트 입니다."
+"3번째 리스트 입니다."
