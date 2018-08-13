@@ -1,0 +1,33 @@
+function home() {
+  const list = ["apple","orange","watermelon"];
+  list.push("banana");
+  console.log(list);
+}
+//const를 사용하더라도 배열과 오브젝트의 값을 변경하는 것은 가능하다.
+
+home();
+
+--------------------------------------------
+["apple", "orange", "watermelon", "banana"]
+--------------------------------------------
+
+
+function home() {
+  const list = ["apple","orange","watermelon"];
+  list.push("banana");
+  console.log(list);
+}
+//immutable array를 어떻게 만들까?
+//뒤로가기, 앞으로가기에서 사용
+
+const list = ["apple","orange","watermelon"];
+list2 = [].concat(list,"banana");
+//console.log(list, list2);
+console.log(list === list2);
+
+
+--------------------------------------------
+["apple", "orange", "watermelon"]
+["apple", "orange", "watermelon", "banana"]
+false
+--------------------------------------------
